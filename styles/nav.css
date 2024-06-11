@@ -1,0 +1,121 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+.logo {
+}
+.logo img {
+  width: 100px;
+}
+.nav-items {
+}
+.nav-items ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+.nav-items ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-items ul li a {
+  color: var(--dark);
+}
+.nav-items ul li a:hover {
+  color: var(--accent-color);
+}
+.nav-items ul li a#home {
+  color: var(--accent-color);
+}
+.search-box {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 13px 12px;
+  border-radius: 10px;
+}
+.search-box div {
+  display: flex;
+}
+::placeholder {
+  color: var(--dark);
+  font-weight: 600;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.search-box div .input-box {
+  border: 0;
+  border-right: 2px solid rgba(0, 0, 0, 0.286);
+}
+.search-box div .input-box i {
+}
+.search-box div .input-box input {
+  border: 0;
+  outline: 0;
+}
+.search-box div i {
+  padding: 0 0 0 10px;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-nav-items {
+  /* display: none;
+  margin: 40px 0; */
+  margin-top: -500px;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  color: #000000;
+  padding: 40px 10px;
+  transition: margin-top 0.5s ease;
+}
+.mobile-nav-items ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-nav-items ul li {
+  padding: 10px 16px;
+}
+.mobile-nav-items ul li a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+}
+.mobile-nav-items ul li a.last-child {
+  background: #000000;
+  color: #ffffff;
+  padding: 12px 36px;
+  border-radius: 50px;
+}
+.mobile-nav-icon {
+  font-size: 26px;
+}
+@media (max-width: 672px) {
+  .nav-items {
+    display: none;
+  }
+  .search-box {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    font-size: 22px;
+  }
+  .mobile-nav-items {
+    justify-content: center;
+    align-items: center;
+  }
+}

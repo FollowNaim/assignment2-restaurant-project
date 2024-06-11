@@ -1,0 +1,109 @@
+.proudct-container {
+}
+.proudct-container h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+.proudct-container p {
+  font-weight: 600;
+  text-align: center;
+  color: var(--accent-color);
+}
+.proudct-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proudct-container .btn button {
+  margin: 20px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 50px;
+}
+.proudct-container .btn button i {
+  margin: 0 8px;
+}
+.proudct-container .products {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+.proudct-container .products .product {
+  max-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 20px;
+  padding: 0 0 15px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.proudct-container .products .product img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.proudct-container .products .product .heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+}
+.proudct-container .products .product .heading .head {
+}
+.proudct-container .products .product .heading .head h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.proudct-container .products .product .heading .ratings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.proudct-container .products .product .heading .ratings i {
+  color: var(--accent-color);
+}
+.proudct-container .products .product .heading .ratings p {
+  color: black;
+}
+.proudct-container .products .product .btn-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.proudct-container .products .product .btn-price .btn {
+}
+.proudct-container .products .product .btn-price .btn button {
+  border-radius: 50px;
+}
+.proudct-container .products .product .btn-price .price {
+}
+.proudct-container .products .product .btn-price .price p {
+  color: black;
+}
+
+@media (max-width: 850px) {
+  .proudct-container .products {
+    /* flex-direction: column;
+    gap: 30px; */
+    grid-template-columns: 1fr 1fr;
+  }
+  .proudct-container .products .product {
+    width: 100%;
+  }
+}
+
+@media (max-width: 672px) {
+  .proudct-container {
+    padding: 10px 20px;
+  }
+  .proudct-container .products {
+    /* flex-direction: column;
+        gap: 30px; */
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+7

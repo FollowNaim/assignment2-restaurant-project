@@ -1,0 +1,54 @@
+.hero-banner {
+  margin-top: 80px;
+  padding: 0;
+  margin-bottom: 80px;
+}
+.hero-banner .cards {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+.hero-banner .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 10px 70px;
+}
+.hero-banner .cards .card:not(:last-of-type) {
+  border: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.385);
+}
+.hero-banner .cards .card:nth-child(2) i {
+  padding: 10px 13px;
+}
+.hero-banner .cards .card h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.hero-banner .cards .card p {
+  font-size: 15px;
+}
+.hero-banner .cards .card i {
+  font-size: 22px;
+  background: var(--accent-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .hero-banner {
+    margin-top: 40px;
+  }
+  .hero-banner .cards .card:not(:last-of-type) {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+  }
+}

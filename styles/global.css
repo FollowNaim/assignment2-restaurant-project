@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark: #0c0418;
+  --accent-color: #f48e28;
+  --footer-text: #b6b6b6;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+li:hover {
+  color: var(--accent-color);
+}
+i {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+  cursor: pointer;
+}
+button {
+  padding: 12px 28px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background: var(--accent-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #000;
+  transition: background-color 0.2s ease-in-out;
+}

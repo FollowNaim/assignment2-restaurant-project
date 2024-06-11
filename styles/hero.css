@@ -1,0 +1,171 @@
+.hero {
+  margin-top: 40px;
+  padding: 10px 20px;
+}
+.hero .hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Left SIde  start*/
+
+.hero .hero-container .banner-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .hero-container .banner-texts .small-part {
+  padding-bottom: 20px;
+}
+.hero .hero-container .banner-texts .small-part div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: #f5ddc4;
+  width: fit-content;
+  padding: 6px 4px 6px 10px;
+  border-radius: 200px;
+}
+.hero .hero-container .banner-texts .small-part div p {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+.hero .hero-container .banner-texts .small-part div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.hero .hero-container .banner-texts .headings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .hero-container .banner-texts .headings h1 {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.hero .hero-container .banner-texts .headings h1 .diff-color {
+  color: var(--accent-color);
+}
+.hero .hero-container .banner-texts .headings p {
+  padding: 10px 0;
+}
+.hero .hero-container .banner-texts .headings .btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.hero .hero-container .banner-texts .headings .btns .btn-one {
+}
+.hero .hero-container .banner-texts .headings .btns .btn-one button {
+  padding: 12px 36px;
+  font-weight: 500;
+}
+.hero .hero-container .banner-texts .headings .btns .btn-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.hero .hero-container .banner-texts .headings .btns .btn-two i {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 12px 15px;
+  border-radius: 50%;
+  color: var(--accent-color);
+}
+.hero .hero-container .banner-texts .headings .btns .btn-two p {
+  font-weight: 600;
+}
+.hero .hero-container .banner-texts .headings .btns .btn-two button {
+}
+
+/* Left side end */
+
+/* Middle */
+
+.hero .hero-container .middle-abstract {
+  width: 400px;
+  margin-top: 80px;
+}
+.hero .hero-container .middle-abstract img {
+  width: 100%;
+}
+
+/* Right side */
+
+.hero .hero-container .hero-foods {
+}
+.hero .hero-container .hero-foods .food-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.hero .hero-container .hero-foods .food-container .food {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: 0 10px 20px 10px;
+  border-radius: 10px;
+}
+.hero .hero-container .hero-foods .food-container .food img {
+  width: 100%;
+}
+.hero .hero-container .hero-foods .food-container .food h2 {
+  margin-top: -30px;
+  font-weight: 600;
+}
+.hero .hero-container .hero-foods .food-container .food .desc {
+  padding: 15px 0;
+  font-weight: 500;
+}
+.hero .hero-container .hero-foods .food-container .food .price {
+  font-weight: 600;
+}
+.dollar {
+  color: red;
+}
+
+@media (max-width: 950px) {
+  .hero .hero-container .middle-abstract {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .hero .hero-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 672px) {
+  .hero .hero-container .banner-texts {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero .hero-container .banner-texts .headings .btns {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero-container .banner-texts .headings .btns {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .hero-container .hero-foods .food-container {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .hero .hero-container .hero-foods .food-container .food {
+    width: 100%;
+  }
+}

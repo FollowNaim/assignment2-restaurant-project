@@ -1,0 +1,97 @@
+.footer-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #fafaff;
+  padding: 40px 20px;
+  color: var(--footer-text);
+}
+.footer-title {
+  color: #000;
+  padding: 0 0 30px 0;
+}
+.footer-container .first,
+.footer-container .second,
+.footer-container .third,
+.footer-container .four {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-container .first {
+}
+.footer-container .first .logo {
+  width: 170px;
+}
+.footer-container .first .logo img {
+  width: 100%;
+}
+.footer-container .first p {
+  width: 300px;
+}
+.footer-container .first .icons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer-container .first .icons-container i {
+  background: #f5ddc4;
+  color: var(--accent-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+.second {
+}
+.second h2 {
+}
+.second p {
+}
+
+.third {
+}
+.third h2 {
+}
+.third ul {
+}
+.third ul li {
+  padding: 5px 0;
+}
+
+.four {
+}
+.four h2 {
+}
+.four p {
+}
+
+.four .input-box {
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 50px;
+  padding: 0 8px;
+  margin-top: 20px;
+}
+.four .input-box input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 15px;
+}
+.four .input-box i {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 8px 11px;
+  border-radius: 50%;
+}
+
+@media (max-width: 615px) {
+  .footer-container {
+    justify-content: start;
+  }
+}

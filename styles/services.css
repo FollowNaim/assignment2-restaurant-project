@@ -1,0 +1,61 @@
+.services-container {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+.services-container .heading p {
+  text-align: center;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+.services-container .heading h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+.services-container .cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services-container .cards .card {
+  width: 350px;
+  border: 1px solid rgba(42, 42, 42, 0.218);
+  border-radius: 10px;
+  padding: 60px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.services-container .cards .card:hover {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.services-container .cards .card i {
+  font-size: 32px;
+  background: #f5ddc4;
+  padding: 20px 19px;
+  color: var(--accent-color);
+  border-radius: 50%;
+}
+/* .services-container .cards .card i:nth-child(1) {
+  padding: 14px 17px;
+}
+.services-container .cards .card i:nth-child(3) {
+  padding: 20px 10px;
+} */
+.services-container .cards .card h2 {
+  text-align: center;
+}
+.services-container .cards .card p {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .services-container .cards .card {
+    width: 100%;
+  }
+}

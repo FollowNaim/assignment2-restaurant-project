@@ -1,0 +1,84 @@
+.newsletter-container {
+  margin: 80px auto;
+}
+.newsletter-container .newsletter {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 40px;
+}
+.newsletter-container .newsletter .left {
+  max-width: 300px;
+  width: 100%;
+}
+.newsletter-container .newsletter .left img {
+  width: 100%;
+}
+.newsletter-container .newsletter .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsletter-container .newsletter .right h2 {
+}
+.newsletter-container .newsletter .right p {
+}
+.newsletter-container .newsletter .right .input-box {
+  background: #fff;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 12px;
+}
+::placeholder {
+  color: #555454;
+}
+.newsletter-container .newsletter .right .input-box input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+}
+.newsletter-container .newsletter .right .input-box button {
+  margin: 0 0 0 40px;
+}
+.newsletter-container .newsletter .right .error-box .error-text {
+  color: red;
+  font-weight: 600;
+  font-size: 18px;
+}
+.newsletter-container .newsletter .right .error-box .error-text.success {
+  color: rgb(43, 219, 43);
+}
+@media (max-width: 768px) {
+  .newsletter-container .newsletter {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .newsletter-container .newsletter .right {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .newsletter-container .newsletter .right .input-box {
+    background: transparent;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .newsletter-container .newsletter .right .input-box input {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 100%;
+  }
+  .newsletter-container .newsletter .right .input-box button {
+    margin: 15px 0;
+  }
+}
